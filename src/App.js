@@ -1,4 +1,4 @@
-import React, { useState, useSyncExternalStore } from 'react';
+import React, { useState, useEffect  } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import './App.css'
@@ -20,19 +20,33 @@ function ImageUploader() {
   const[Pacote4 , setPacote4] = useState('')
   const[form_pagamento , setForm_pagamento]= useState('')
   const[text_complementar , SetText_complementar] = useState('')
+  const [data_entrega , setData_entrega] = useState('')
 
   const [imageLogo , setImageLogo] = useState(null);
 
-  const handleImageLogo = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setImageLogo(reader.result); // Carrega a imagem como base64
-      };
-      reader.readAsDataURL(file);
-    }
-  };
+ // Salvar dados no localStorage ao atualizar os estados
+ useEffect(() => {
+  localStorage.setItem('telefone', telefone);
+  localStorage.setItem('Aroba_insta', Aroba_insta);
+  localStorage.setItem('texto_capa', texto_capa);
+  localStorage.setItem('Pacote1', Pacote1);
+  localStorage.setItem('Pacote2', Pacote2);
+  localStorage.setItem('Pacote3', Pacote3);
+  localStorage.setItem('form_pagamento', form_pagamento);
+  localStorage.setItem('text_complementar', text_complementar);
+}, [telefone, Aroba_insta, texto_capa, Pacote1, Pacote2, Pacote3, form_pagamento, text_complementar]);
+
+const handleImageLogo = (e) => {
+  const file = e.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setImageLogo(reader.result); // Carrega a imagem como base64
+    };
+    reader.readAsDataURL(file);
+  }
+};
+
 
 
 
@@ -81,8 +95,8 @@ function ImageUploader() {
   }
 
   return (
-    <div>
-      {/* Campo para o usuário inserir o nome */}
+    <div  className='div_principal'>
+      
       <div className="header">
       <div  className='Form'>
          <span>
@@ -98,15 +112,20 @@ function ImageUploader() {
         <br/>
         <input type="file" accept="image/*" onChange={handleImageLogo} />
         <br/>
+        <br/>
          <span> Preencha com a informacao dos Pacotes </span>
+         <br/>
         <input   type="text"   placeholder="Pacote1 "  value={Pacote1} onChange={(e) => setPacote1(e.target.value)}/>
         <input   type="text"   placeholder="Pacote2 "  value={Pacote2} onChange={(e) => setPacote2(e.target.value)}/>
         <input   type="text"   placeholder="Pacote3 "  value={Pacote3} onChange={(e) => setPacote3(e.target.value)}/>
         <input   type="text"   placeholder="Pacote4 "  value={Pacote4} onChange={(e) => setPacote4(e.target.value)}/>
         <br/>
-        <span>informe a formas pagamento sep. por '-'</span>
-        <input   type="text"   placeholder="form_pagamento "  value={form_pagamento} onChange={(e) => setForm_pagamento(e.target.value)}/>
-        <input   type="text"   placeholder="text_complementar "  value={text_complementar} onChange={(e) => SetText_complementar(e.target.value)}/>
+        <br/>
+        <span>informe a formas pagamento sep. por '-'</span> <br/> 
+        {/* <input   type="text"   placeholder="form_pagamento "  value={form_pagamento} onChange={(e) => setForm_pagamento(e.target.value)}/>
+        <input   type="text"   placeholder="text_complementar "  value={text_complementar} onChange={(e) => SetText_complementar(e.target.value)}/> */}
+
+        <input   type="text"   placeholder="Data Entrega "  value={data_entrega} onChange={(e) => setData_entrega(e.target.value)}/>
 
         
       <br/>
@@ -119,7 +138,7 @@ function ImageUploader() {
          <span>
             Preencha os Dados abaixo para criação da Grid
          </span> <br/>
-        <input   type="text"   placeholder="Texto Complementar"  value={name} onChange={(e) => setName(e.target.value)}/>
+        {/* <input   type="text"   placeholder="Texto Complementar"  value={name} onChange={(e) => setName(e.target.value)}/> */}
         <input  type="file"  accept="image/*" multiple   onChange={handleImageChange}  />
       <br/>
      
@@ -170,7 +189,7 @@ function ImageUploader() {
           </div>
            <div className='div_Pacotes'> 
              <div className='nav_meio_aluno' >
-                <span>M A R Q U E O P A C O T E D E S E J A D O :</span>
+                <span>MARQUE O PACOTE DESEJADO :</span>
 
              </div>
            
@@ -178,18 +197,18 @@ function ImageUploader() {
              <div className="teck_pacote"></div>
              <span className='text_pacote'>{Pacote1}</span>
              </div>
-
+      	      <br/>
              <div className='pacote'>
              <div className="teck_pacote"></div>
              <span className='text_pacote'>{Pacote2}</span>
              </div>
-
+             <br/>
 
              <div className='pacote'>
              <div className="teck_pacote"></div>
              <span className='text_pacote'>{Pacote3}</span>
              </div>
-             
+             <br/>  
              <div className='pacote'>
              <div className="teck_pacote"></div>
              <span className='text_pacote'>{Pacote4}</span>
@@ -200,22 +219,27 @@ function ImageUploader() {
            </div>
 
            <div className='Form_pagamento'>
-             <div className='nav_meio_aluno' > <spna>F O R M A S D E P A G A M E N T O :</spna></div>
+             <div className='nav_meio_aluno' > <spna>FORMAS DE PAGAMENTO:</spna></div>
               <div className='Div_pagamento_text'>
-              <h2>{form_pagamento}</h2>
-              <h2>{text_complementar}</h2>
+              <h2>PIX - DINHEIRO - CARTAO DE DÉBITO - CARTAO DE CRÉDITO</h2>
+              {/* <h2>{form_pagamento}</h2> */}
+              <h2 style={{ color: 'red'}}>Observação:  PACOTES 3 E 4 , PARCELAMOS NO CARTAO DE CRÉDITO EM   ATÉ 4X SEM JUROS 
+              </h2>
+              {/* <h2>{text_complementar}</h2> */}
               </div>
          
 
            </div>
            <div className='roda_pes'>
-             <h2>P A G A M E N T O E E N T R E G A D A S F O T O S D I A</h2>
+             <h2>PAGAMENTO E ENTREGA DAS FOTOS DIA {data_entrega}</h2>
            </div>
       </div>
   
       <div className="a4-page">
         <div className='grid_titulo'>
-        {name &&  <h2> {name}</h2>}
+        <span>{dados_aluno}</span>
+        <h3>MARQUE  COM X AS FOTOS ESCOLHIDAS</h3>
+        {/* {name &&  <h2> {name}</h2>} */}
         </div>
      
         {images.length > 0 ? (
