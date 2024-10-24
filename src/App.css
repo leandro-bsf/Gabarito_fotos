@@ -16,6 +16,10 @@
   font-size: 18px;
 
 }
+.dados_pais{
+  font-size: 20px;
+  font-weight: bold;
+}
 .nav span {
    color: black;
    font-family: 'Montserrat' ;
@@ -38,6 +42,7 @@
   width: 99%;
  color: white;
   height: 35px;
+  margin-top: 15px;
  padding: 5px;
   text-align: center;
   font-family: 'Montserrat' ;
@@ -57,7 +62,7 @@
   width: 785px;
   height: 50px;
   background-color: red;
-  bottom: -24px;
+  bottom: -6px;
   align-items: center;
   text-align: center;
   padding: 5px;
@@ -66,6 +71,7 @@
 }
 .grid_titulo{
    text-align: center;
+
 }
 
 
@@ -87,6 +93,7 @@
 }
 .pacote{
    margin: 10px;
+   margin-top: 15px;
 }
 .div_Pacotes{
   font-size: 20px;
@@ -103,7 +110,11 @@
 }
 .text_pacote{
   padding: 35px;
-  font-size: 25px;
+  
+  font-size: 20px;
+}
+.Form_pagamento{
+   margin-top: 25px;
 }
 .a4-page_capa{
   font-family: 'Montserrat' ;
@@ -124,7 +135,7 @@
   font-family: 'Montserrat' ;
   height: 1123px;  /* Altura da folha A4 */
   margin: 5px auto;  /* Pequena margem ao redor da folha */
-  padding: 10px;   /* Espaço interno para que o conteúdo não fique colado nas bordas */
+  padding: 5px;   /* Espaço interno para que o conteúdo não fique colado nas bordas */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Efeito de sombra para parecer uma folha */
   border: 1px solid #ccc;  /* Borda leve para delimitar a folha */
   background-color: white; /* Fundo branco para simular papel */
@@ -135,7 +146,9 @@
 }
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsivo dentro da folha */
+  padding: 8px;
+ 
+  grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); /* Responsivo dentro da folha */
   gap: 4px;
 }
 
@@ -145,8 +158,8 @@
 }
 
 .image-item img {
-  width: 80%;
-  height: auto;
+  width: 70%;
+  height: 65%;
   border: 1px solid #ddd; /* Pequena borda ao redor das imagens */
   padding: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra leve nas imagens */
@@ -258,3 +271,5 @@
    font-family: 'Arial', sans-serif;
   font-size: 20px;
 }
+
+
