@@ -141,7 +141,7 @@ const handleImageLogo = (e) => {
          {/* <span>  Preencha os Dados abaixo para criação da Grid</span> */}
           <br/>
         {/* <input   type="text"   placeholder="Texto Complementar"  value={name} onChange={(e) => setName(e.target.value)}/> */}
-         <span> Escola até 35 fotos.</span>
+         <span> Escola até 30  fotos.</span>
         <input  type="file"  accept="image/*" multiple   onChange={handleImageChange}  />
 
       <br/>

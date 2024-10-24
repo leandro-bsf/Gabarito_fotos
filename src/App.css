@@ -71,6 +71,7 @@
 }
 .grid_titulo{
    text-align: center;
+   margin-top: 25px;
 
 }
 
@@ -134,8 +135,8 @@
   width: 794px;    /* Largura da folha A4 */
   font-family: 'Montserrat' ;
   height: 1123px;  /* Altura da folha A4 */
-  margin: 5px auto;  /* Pequena margem ao redor da folha */
-  padding: 5px;   /* Espaço interno para que o conteúdo não fique colado nas bordas */
+  margin: 5px auto auto ;  /* Pequena margem ao redor da folha */
+  padding-left: 20px;   /* Espaço interno para que o conteúdo não fique colado nas bordas */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Efeito de sombra para parecer uma folha */
   border: 1px solid #ccc;  /* Borda leve para delimitar a folha */
   background-color: white; /* Fundo branco para simular papel */
