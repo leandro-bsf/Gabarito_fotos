@@ -242,9 +242,12 @@ const handleImageLogo = (e) => {
               <div className='Div_pagamento_text'>
               <h2>PIX - DINHEIRO - CARTAO DE DÉBITO - CARTAO DE CRÉDITO</h2>
               {/* <h2>{form_pagamento}</h2> */}
-              <br/>
+             
               <h2 style={{ color: 'red'}}>Observação:  PACOTES 3 E 4 , PARCELAMOS NO CARTAO DE CRÉDITO EM   ATÉ 4X SEM JUROS
+              
               </h2>
+            
+              <h2  style={{ color: 'red'}}>DEVOLVER ESSE FORMULÁRIO ATÉ DIA 30/10</h2>
               {/* <h2>{text_complementar}</h2> */}
               </div>
 
