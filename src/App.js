@@ -123,8 +123,8 @@ const handleImageLogo = (e) => {
         <br/>
         <br/> */}
         {/* <span>informe a formas pagamento sep. por '-'</span> <br/> */}
-        {/* <input   type="text"   placeholder="form_pagamento "  value={form_pagamento} onChange={(e) => setForm_pagamento(e.target.value)}/>
-        <input   type="text"   placeholder="text_complementar "  value={text_complementar} onChange={(e) => SetText_complementar(e.target.value)}/> */}
+        {/* <input   type="text"   placeholder="form_pagamento "  value={form_pagamento} onChange={(e) => setForm_pagamento(e.target.value)}/>*/}
+        <input   type="text"   placeholder="text_complementar "  value={text_complementar} onChange={(e) => SetText_complementar(e.target.value)}/> 
 
         <input   type="text"   placeholder="Data Entrega "  value={data_entrega} onChange={(e) => setData_entrega(e.target.value)}/>
 
@@ -244,11 +244,11 @@ const handleImageLogo = (e) => {
               {/* <h2>{form_pagamento}</h2> */}
              
               <h2 style={{ color: 'red'}}>Observação:  PACOTES 3 E 4 , PARCELAMOS NO CARTAO DE CRÉDITO EM   ATÉ 4X SEM JUROS
-              
+                 
               </h2>
             
               
-               <h2>{text_complementar}</h2> 
+               <h2  style={{ color: 'red'}}>{text_complementar}</h2> 
               </div>
 
 
