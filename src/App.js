@@ -247,8 +247,8 @@ const handleImageLogo = (e) => {
               
               </h2>
             
-              <h2  style={{ color: 'red'}}>DEVOLVER ESSE FORMULÁRIO ATÉ DIA 30/10</h2>
-              {/* <h2>{text_complementar}</h2> */}
+              
+               <h2>{text_complementar}</h2> 
               </div>
 
 
