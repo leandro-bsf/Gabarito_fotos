@@ -207,30 +207,26 @@ const handleImageLogo = (e) => {
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote1}</span> */}
-              <span className='text_pacote'>PACOTE 1: R$50,00 (1 fotão 20x25 + 1 foto menor 10x15
-                + brinde as 2 fotos em arquivo digital direto no seu WhatsApp).</span>
+              <span className='text_pacote'>PACOTE 1: R$50,00 (1 fotão 20x30 + 1 foto menor 10x15 + de brinde as mesmas 2 fotos em arquivo digital direto no seu WhatsApp).</span>
             </div>
       	      <br/>
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote2}</span> */}
-             <span className='text_pacote'>PACOTE 2: R$80,00 (1 fotão 20x25 + 4 fotos menores 10x15
-              + brinde as 4 fotos em arquivo digital direto no seu WhatsApp).</span>
+             <span className='text_pacote'>PACOTE 2: R$80,00 (1 fotão 20x30 + 4 fotos menores 10x15 + de brinde as mesmas 5 fotos em arquivo digital direto no seu WhatsApp).</span>
              </div>
              <br/>
 
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote3}</span> */}
-             <span className='text_pacote'>PACOTE 3: R$120,00 (1 quadro com foto 20x30 + 5 fotos menores 10x15
-              + brinde as 5 fotos em arquivo digital direto no seu WhatsApp).</span>
+             <span className='text_pacote'>PACOTE 3: R$120,00 (1 fotão 20x30 + 7 fotos menores 10x15 + de brinde as mesmas 8 fotos em arquivo digital direto no seu WhatsApp).</span>
              </div>
              <br/>
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote4}</span> */}
-             <span className='text_pacote'>PACOTE 4: R$160,00 (1 quadro com foto 20x30 + 10 fotos menores
-              10x15 + brinde as 10 fotos em arquivo digital direto no seu WhatsApp).</span>
+             <span className='text_pacote'>PACOTE 4: R$160,00 ( DOIS fotão 20x30 + 10 fotos menores 10x15 + de brinde as mesmas 12 fotos em arquivo digital direto no seu WhatsApp).</span>
              </div>
 
 
@@ -243,7 +239,7 @@ const handleImageLogo = (e) => {
               <h2>PIX - DINHEIRO - CARTAO DE DÉBITO - CARTAO DE CRÉDITO</h2>
               {/* <h2>{form_pagamento}</h2> */}
              
-              <h2 style={{ color: 'red'}}>Observação:  PACOTES 3 E 4 , PARCELAMOS NO CARTAO DE CRÉDITO EM   ATÉ 4X SEM JUROS
+              <h2 style={{ color: 'red'}}>Observação:  PACOTES 3 E 4 , PARCELAMOS NO CARTAO DE CRÉDITO EM   ATÉ 4X COM JUROS DA MAQUININHA
                  
               </h2>
             
