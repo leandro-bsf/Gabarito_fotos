@@ -207,26 +207,26 @@ const handleImageLogo = (e) => {
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote1}</span> */}
-              <span className='text_pacote'>PACOTE 1: R$50,00 (1 fotão 20x30 + 1 foto menor 10x15 + de brinde as mesmas 2 fotos em arquivo digital direto no seu WhatsApp).</span>
+              <span className='text_pacote'>PACOTE 1: R$60,00 (1 fotão 20x25 + 3 foto menor 10x15 + de brinde as mesmas fotos em arquivo digital direto no seu WhatsApp).</span>
             </div>
       	      <br/>
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote2}</span> */}
-             <span className='text_pacote'>PACOTE 2: R$80,00 (1 fotão 20x30 + 4 fotos menores 10x15 + de brinde as mesmas 5 fotos em arquivo digital direto no seu WhatsApp).</span>
+             <span className='text_pacote'>PACOTE 2: R$90,00 (1 fotão 20x25 + 6 fotos menores 10x15 + de brinde as mesmas fotos em arquivo digital direto no seu WhatsApp).</span>
              </div>
              <br/>
 
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote3}</span> */}
-             <span className='text_pacote'>PACOTE 3: R$120,00 (1 fotão 20x30 + 7 fotos menores 10x15 + de brinde as mesmas 8 fotos em arquivo digital direto no seu WhatsApp).</span>
+             <span className='text_pacote'>PACOTE 3: R$130,00 (1 fotão 20x25 + 10 fotos menores 10x15 + de brinde as mesmas fotos em arquivo digital direto no seu WhatsApp).</span>
              </div>
              <br/>
              <div className='pacote'>
              <div className="teck_pacote"></div>
              {/* <span className='text_pacote'>{Pacote4}</span> */}
-             <span className='text_pacote'>PACOTE 4: R$160,00 ( DOIS fotão 20x30 + 10 fotos menores 10x15 + de brinde as mesmas 12 fotos em arquivo digital direto no seu WhatsApp).</span>
+             <span className='text_pacote'>PACOTE 4: R$170,00 ( DOIS fotão 20x25 + album com  20 fotos 15x21 + TODAS as fotos em arquivo digital direto no seu WhatsApp + BRINDE surpresa).</span>
              </div>
 
 
@@ -236,10 +236,12 @@ const handleImageLogo = (e) => {
            <div className='Form_pagamento'>
              <div className='nav_meio_aluno' > <spna>FORMAS DE PAGAMENTO:</spna></div>
               <div className='Div_pagamento_text'>
-              <h2>PIX - DINHEIRO - CARTAO DE DÉBITO - CARTAO DE CRÉDITO</h2>
+              <h2>PIX - chave CPF: 10694810924 (Diovana da Rosa de Lima) <br/>Enviar comprovante do Pix no  whatsapp (46) 99132-1472 </h2>
+             
+               <h2>DINHEIRO - CARTAO DE DÉBITO - CARTAO DE CRÉDITO</h2>
               {/* <h2>{form_pagamento}</h2> */}
              
-              <h2 style={{ color: 'red'}}>Observação:  PACOTES 3 E 4 , PARCELAMOS NO CARTAO DE CRÉDITO EM   ATÉ 4X COM JUROS DA MAQUININHA
+              <h2 style={{ color: 'red'}}>Observação: PARCELAMOS NO CARTAO DE CRÉDITO EM ATÉ 10X COM JUROS DA MAQUININHA.
                  
               </h2>
             
